@@ -2,10 +2,10 @@ name: Test workflow
 on: 
   workflow_dispatch:
     inputs:
-      country: 
+      deploy-country: 
         required: true
         type: string
-      environment:
+      deploy-environment:
         required: true
         type: string
 
@@ -16,8 +16,8 @@ jobs:
       - name: test-step
         uses: midnattsol/metadata@main
         with: 
-          country: ${{ inputs.country }}
-          environment: ${{ inputs.environment }}
+          country: ${{ inputs.deploy-country }}
+          environment: ${{ inputs.deploy-environment }}
       - name: Testing var
         run: |
           echo $METADATA
