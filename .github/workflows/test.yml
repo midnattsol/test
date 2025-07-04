@@ -20,4 +20,5 @@ jobs:
           environment: ${{ inputs.deploy-environment }}
       - name: Testing var
         run: |
-          echo $METADATA
+          echo "Account: $ACCOUNT_ID"
+          echo "Region: $REGION"
