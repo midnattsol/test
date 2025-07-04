@@ -18,4 +18,6 @@ jobs:
         with: 
           country: ${{ inputs.country }}
           environment: ${{ inputs.environment }}
-
+      - name: Testing var
+        run: |
+          echo $METADATA
