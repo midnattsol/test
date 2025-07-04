@@ -1,0 +1,21 @@
+name: Test workflow
+on: 
+  workflow_dispatch:
+    inputs:
+      country: 
+        required: true
+        type: string
+      environment:
+        required: true
+        type: string
+
+jobs: 
+  test-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test-step
+        uses: midnattsol/metadata
+        with: 
+          country: ${{ inputs.country }}
+          environment: ${{ inputs.environment }}
+
