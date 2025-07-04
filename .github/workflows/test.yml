@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: test-step
-        uses: midnattsol/metadata
+        uses: midnattsol/metadata@main
         with: 
           country: ${{ inputs.country }}
           environment: ${{ inputs.environment }}
