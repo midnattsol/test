@@ -21,4 +21,4 @@ jobs:
       - name: Testing var
         run: |
           echo "Account: $ACCOUNT_ID"
-          echo "Region: $REGION"
+          echo "Region: $region"
