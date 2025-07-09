@@ -21,6 +21,6 @@ jobs:
           metadata: ${{ join(github.event.repository.topics, ' ') }}
       - name: Testing var
         run: |
-          echo "Account: $ACCOUNT_ID"
-          echo "Region: $REGION"
+          echo "Account: $AWS_ACCOUNT_ID"
+          echo "Region: $AWS_REGION"
           echo "Topics: ${{ join(github.event.repository.topics, ' ') }}"
