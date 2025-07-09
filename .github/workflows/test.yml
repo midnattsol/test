@@ -23,5 +23,5 @@ jobs:
           echo "Account: $ACCOUNT_ID"
           echo "Region: $REGION"
           echo "Topics: ${{ github.event.repository.topics }}"
-          echo "Owner: ${{ github.repository.owner }}"
-          echo "Name: ${{ fromJSON(github.repository.name) }}"
+          echo "Owner: ${{ fromJSON(github.repository.owner) }}"
+          echo "Name: ${{ github.repository.name }}"
