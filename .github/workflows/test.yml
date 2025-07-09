@@ -22,5 +22,5 @@ jobs:
         run: |
           echo "Account: $ACCOUNT_ID"
           echo "Region: $REGION"
-          echo "Topics: ${{ env.REPOSITORY_TOPICS }}"
-          echo "Owner: ${{ env.REPOSITORY_OWNER }}"
+          echo "Topics: ${{ github.event.repository.topics }}"
+          echo "Owner: ${{ github.event.repository.owner }}"
