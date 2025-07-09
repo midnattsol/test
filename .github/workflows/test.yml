@@ -24,4 +24,4 @@ jobs:
           echo "Region: $REGION"
           echo "Topics: ${{ github.event.repository.topics }}"
           echo "Owner: ${{ github.repository.owner }}"
-          echo "Name: ${{ github.repository.name }}"
+          echo "Name: ${{ fromJSON(github.repository.name) }}"
