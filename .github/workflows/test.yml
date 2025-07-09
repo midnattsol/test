@@ -22,4 +22,5 @@ jobs:
         run: |
           echo "Account: $ACCOUNT_ID"
           echo "Region: $REGION"
-          echo "Probando topics: ${{ env.REPOSITORY_TOPICS }}"
+          echo "Topics: ${{ env.REPOSITORY_TOPICS }}"
+          echo "Owner: ${{ env.REPOSITORY_OWNER }}"
