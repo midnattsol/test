@@ -22,4 +22,4 @@ jobs:
         run: |
           echo "Account: $ACCOUNT_ID"
           echo "Region: $REGION"
-          echo "Topics: ${{ github.event.repository.topics }}"
+          echo "Topics: ${{ join(github.event.repository.topics, ', ') }}"
