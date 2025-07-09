@@ -18,8 +18,9 @@ jobs:
         with: 
           country: ${{ inputs.deploy-country }}
           environment: ${{ inputs.deploy-environment }}
+          metadata: ${{ join(github.event.repository.topics, ' ') }}
       - name: Testing var
         run: |
           echo "Account: $ACCOUNT_ID"
           echo "Region: $REGION"
-          echo "Topics: ${{ join(github.event.repository.topics, ', ') }}"
+          echo "Topics: ${{ join(github.event.repository.topics, ' ') }}"
